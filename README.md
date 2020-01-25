@@ -13,9 +13,9 @@ Link to Wesbite : https://christuniversity.in/BlossomsCUFE/
 + Google Font APIs
 
 # Previews
-    ## 01
-        ![preview gif](preview1.gif)
+   ### 01
+   ![preview gif](preview1.gif)
 
-    ## 02
-        ![preview gif](preview2.gif)
+   ### 02
+   ![preview gif](preview2.gif)
 
