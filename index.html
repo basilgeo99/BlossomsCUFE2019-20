@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Site Metas -->
+<title>Blossoms 2019-20 | Kengeri Campus</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<head>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/cufe.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Set a background color */
+        body {
+            background-color: #f2f3f5;
+            font-family: Helvetica, sans-serif;
+        }
+
+        /* The actual time (the vertical ruler) */
+        .time {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* The actual time (the vertical ruler) */
+        .time::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: rgb(94, 94, 94);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* contain around cont */
+        .contain {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        /* The circles on the time */
+        .contain::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid rgb(94, 94, 94);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Place the contain to the left */
+        .LEFT {
+            left: 0;
+        }
+
+        /* Place the contain to the right */
+        .RIGHT {
+            left: 50%;
+        }
+
+        /* Add arrows to the left contain (pointing right) */
+        .LEFT::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right contain (pointing left) */
+        .RIGHT::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        /* Fix the circle for contains on the right side */
+        .RIGHT::after {
+            left: -12px;
+        }
+
+        .LEFT::after {
+            right: -12px;
+        }
+
+        /* The actual content */
+        .cont {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        /* Media queries - Responsive time on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+
+            /* Place the timelime to the left */
+            .time::after {
+                left: 31px;
+            }
+
+            /* Full-width contains */
+            .contain {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            /* Make sure that all arrows are pointing LEFTwards */
+            .contain::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+
+            /* Make sure all circles are at the same spot */
+            .LEFT::after,
+            .RIGHT::after {
+                left: 19px;
+            }
+
+            /* Make all right contains behave like the left ones */
+            .RIGHT {
+                left: 0%;
+            }
+
+            .styledUL {
+                list-style-type: disc;
+            }
+        }
+    </style>
+</head>
+
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+            <div id="loader"></div>
+        </div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="https://christuniversity.in//">
+                <img class="img-fluid" src="images/logo.png" alt="christlogo" height="50%" width="50%" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#schedule">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#guideliness">General Guidelines</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#scheduleOfStrategy">Schedule of Strategy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="main-banner parallaxie" style="background: url('images/media/colorgif.gif')">
+        <div class="heading">
+            <p>FACULTY OF ENGINEERING & SCHOOL OF ARCHITECTURE</p>
+            <h1>BLOSSOMS 2019-20</h1>
+            <p>The most awaited cultural festival of the year <br> just got better</p>
+            <h3 class="cd-headline clip is-full-width">
+                <span>Be a part of the </span>
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Art</b>
+                    <b>Literature</b>
+                    <b>Theatre</b>
+                    <b>Music</b>
+                    <b>Dance</b>
+                    <b>Joy</b>
+                    <b>Fun</b>
+                </span>
+            </h3>
+        </div>
+    </section>
+
+    <svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+        viewBox="0 0 85 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+        </path>
+    </svg>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h2>About Blossoms</h2>
+                        <p>Blossoms,an Intra University Fest conducted by CHRIST(Deemed to be University) that begins as
+                            an Intra Departmental Cultural Fest, culminating into an Inter Deanery Competition.
+                            Blossoms’19 included four major events, Stage, Literary, Art & Theatre.</p>
+                        <p>These four events were divided into 17 qualifying events namely: Indian Dance Classical Solo,
+                            Indian Dance Group (Non-Theme), Indian Electric Music Group, Western Electric Music Group,
+                            Western Acoustics Music Group, Pot Pourri, Quiz, Extempore, Debate, Dumb Charades, JAM,
+                            Street Theatre, Proscenium Theatre, Mime, Gift card making, Painting, Pot Art, Poster
+                            Painting &
+                            Cartooning.</p>
+                        <blockquote><i>"It’s not about whether we win or lose; it’s about how many people remember us
+                                when we leave the stage"</i></blockquote>
+                        <a href="blossoms19_20.zip" class="sim-btn btn-hover-new" data-text="Download"><span>Download
+                            </span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="images/events/10.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+    <div id="events" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Events</h3>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h2>Art</h2>
+                        <p>Express your imagination and create.
+                            Come take part in the art events and explore your creative side.</p>
+                        <a href="#details" class="sim-btn btn-hover-new js-scroll-trigger"
+                            data-text="Details"><span>Details </span></a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fas fa-paragraph"></i>
+                        </div>
+                        <h2>Literary</h2>
+                        <p>A world of words.Falunt your literary skills by taking part in fun events like debates and
+                            dumb charades</p>
+                        <a href="#details" class="sim-btn btn-hover-new js-scroll-trigger"
+                            data-text="Details"><span>Details </span></a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fas fa-theater-masks"></i>
+                        </div>
+                        <h2>Theatre</h2>
+                        <p>Calling all thespians!<br>Mesmerize the audience with your acting skills.</p>
+                        <a href="#details" class="sim-btn btn-hover-new js-scroll-trigger"
+                            data-text="Details"><span>Details </span></a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h2>Stage</h2>
+                        <p>Make you your moves and music reverberate through our halls!<br>Don't leave before you've
+                            given it your all in this battle of music and dance!</p>
+                        <a href="#details" class="sim-btn btn-hover-new js-scroll-trigger"
+                            data-text="Details"><span>Details </span></a>
+                    </div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fab fa-jedi-order"></i>
+                        </div>
+                        <h2>Inter-Deanery</h2>
+                        <p>The biggest dance competition in Christ University. Team up with your deanery and
+                            compete for throne of dancers in a King of the Hill battle!</p>
+                        <a href="#details" class="sim-btn btn-hover-new js-scroll-trigger"
+                            data-text="Details"><span>Details </span></a>
+                    </div>
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="schedule" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Schedule</h3>
+                <p><br></p>
+            </div><!-- end title -->
+        </div>
+
+        <div class="time">
+
+            <div class="contain LEFT">
+                <div class="cont">
+                    <h2>TUE 3rd Dec</h2>
+                    <p>ART EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Painting</td>
+                            <td>Block-3 Room-323</td>
+                        </tr>
+                        <tr>
+                            <td>Greeting Card Making</td>
+                            <td>Block-3 Room-314</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contain RIGHT">
+                <div class="cont">
+                    <h2>WED 4th Dec</h2>
+                    <p>ART EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Pot Art</td>
+                            <td>Block-3 Room-314</td>
+                        </tr>
+                        <tr>
+                            <td>Cartooning</td>
+                            <td>Block-3 Room-323</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="contain LEFT">
+                <div class="cont">
+                    <h2>THU 5th Dec</h2>
+                    <p>ART & LIT EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Poster Painting</td>
+                            <td>Open Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>Quiz Prelims</td>
+                            <td>Block-2 Room-201</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contain RIGHT">
+                <div class="cont">
+                    <h2>FRI 6th Dec</h2>
+                    <p>THEATRE EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Proscenium</td>
+                            <td>Block-1 Auditorium</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="contain LEFT">
+                <div class="cont">
+                    <h2>SAT 7th Dec</h2>
+                    <p>THEATRE & STAGE EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Street Play</td>
+                            <td>Open Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>MIME</td>
+                            <td>Block-3 Auditorium</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contain RIGHT">
+                <div class="cont">
+                    <h2>MON 9th Dec</h2>
+                    <p>LIT EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Debate Prelims</td>
+                            <td>Block-2 Room-203</td>
+                        </tr>
+                        <tr>
+                            <td>Pot Pourri</td>
+                            <td>Block-2 Room-213</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="contain LEFT">
+                <div class="cont">
+                    <h2>TUE 10th Dec</h2>
+                    <p>LIT EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Quiz Finals</td>
+                            <td>Block-2 Room-203</td>
+                        </tr>
+                        <tr>
+                            <td>Extempore</td>
+                            <td>Block-2 Room-201</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contain RIGHT">
+                <div class="cont">
+                    <h2>WED 11th Dec</h2>
+                    <p>LIT EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Debate Finals</td>
+                            <td>Block-2 Room-203</td>
+                        </tr>
+                        <tr>
+                            <td>JAM</td>
+                            <td>Block-2 Room-205</td>
+                        </tr>
+                        <tr>
+                            <td>Dumb Charades</td>
+                            <td>Block-2 Room-213</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="contain LEFT">
+                <div class="cont">
+                    <h2>SAT 14th Dec</h2>
+                    <p>STAGE EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Indian Dance Classical</td>
+                            <td>Open Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>Non-Theme Dance</td>
+                            <td>Open Auditorium</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contain RIGHT">
+                <div class="cont">
+                    <h2>MON 16th Dec</h2>
+                    <p>STAGE EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Western Electric Band</td>
+                            <td>Open Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>Western Acapella</td>
+                            <td>Open Auditorium</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="contain LEFT">
+                <div class="cont">
+                    <h2>TUE 17th Dec</h2>
+                    <p>STAGE EVENTS</p>
+                    <table cellpadding=12px>
+                        <tr>
+                            <td>Indian Band</td>
+                            <td>Open Auditorium</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="guideliness" class="section wb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>General Guidelines</h3>
+
+            </div><!-- end title -->
+
+            <div class="alert alert-dark" style="padding: 30px" role="alert">
+                <p>Department should ensure that all their students participate in minimum
+                    events.<br>The Students are allowed to participate in as many as events that they
+                    are interested to participate in depending on the schedule and timings of the events.<br>
+                    In this edition of Blossoms, the Faculty of Engineering and School of
+                    Architecture will be divided into 3 teams from the deaneries.<br>These are as follows :</p>
+                <ul>
+                    <li><b>1. Science & Humanities</b></li>
+                    <li><b>2. Non-Circuit (Mechanical, Civil & Architecture)</b></li>
+                    <li><b>3. Circuit (CS/IT, EC, & EEE)</b></li>
+                </ul>
+                <p>The events are divided into 4 categories for this edition of Blossoms</p>
+                <ul>
+                    <li><b>1. Art</b></li>
+                    <li><b>2. Literary</b></li>
+                    <li><b>3. Stage</b></li>
+                    <li><b>4. Theatre</b></li>
+                </ul>
+                <p>Department event coordinators should ensure that there should be equal
+                    participation in every event. Class teachers would play a key role in
+                    ensuring that all students of their class participate in at least one relevant
+                    event. Students absent for their assigned event must participate in any of the
+                    other following events to ensure 100% participation from the class.</p>
+                <p>The total points for BLOSSOMS at intra level is 400.</p>
+                <ul>
+                    <li><b>1. Art & Literary events carry 5 points each -> 10 x 5 = 50 Points</b></li>
+                    <li><b>2. Stage Events carry 10 points each -> 5 x 10 = 50 Points</b></li>
+                    <li><b>3. Theater Events carry 20 points each - > 2 x 20 = 40 Points</b></li>
+                </ul>
+                <p>260 points will be allotted by SWO for strategy, certification & participation</p>
+                <p>To ensure recognition, all students will be entitled for the participation certificates.</p>
+                <p>All Inter-deanery Finals are held on 5 February to 8 February, 2020 along with In Bloom 2020.</p>
+                <p>The decision of the Team/Deanery Event coordinator is final for the intra-deanery events.</p>
+                <p>Two of the best representations per event from each of the 9 deanery teams will be sent for the
+                    Finals.</p>
+                <p>As there are multiple participation opportunity this year, the deanery coordinators are requested to
+                    send the deanery contingents for each event according to the schedule and timing of the finale
+                    event.</p>
+                <p>The decision of SWO is final for the intra-department events.</p>
+                <p>Each Department Team will allotted Rs. 2500/- for all the expenditure till the finals of Blossoms.
+                </p>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="scheduleOfStrategy" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Schedule of Strategy</h3>
+                <p></p>
+            </div><!-- end title -->
+            <div class="alert alert-dark" style="padding: 30px" role="alert">
+                <ul>
+                    <li>
+                        <h5><b>1. Publicity and Event organization (100 points)</b></h5>
+                        <p>The Publicity is measured by visibility of paraphernalia as well as audience turn-out. Each
+                            department publicizes the event through whatever publicity material they wish to use, for
+                            example, banners, posters, flyers, street plays and other forms of campaigns during lunch
+                            hours.
+                            They need to ensure that they have a maximum strength audience for stage and theatre events.
+                            Class teachers must ensure that their entire class participates in the right event/s in
+                            consultation
+                            with the event coordinators. The format provided should ensure that event coordinators get
+                            all
+                            the required information from each class to collate all data. Attendance of each registered
+                            student
+                            must be accounted for to ensure full participation.
+                            The dean, HODs and teachers must ensure that there is 25% participation of students from
+                            their
+                            team/deanery in each of the four categories (Art, Lit, Stage & Theatre). This can be done by
+                            allotting a team of teachers to co-ordinate between departments and classes, to ensure
+                            equal distribution among events categories.</p>
+                    </li>
+                    <li>
+                        <h5><b>2. Certification (10 points)</b></h5>
+                        <p>Blossoms Certification Day for the Department must be ensured.
+                            The writing/signing of certificates and announcement of results on the deanery Certification
+                            day
+                            must be organized. Importance is also given to how the certification ceremony is made a
+                            special
+                            occasion for all students to receive the certificates from the respective event
+                            co-coordinators.</p>
+                    </li>
+                    <li>
+                        <h5><b>3. Participation and Documentation (150 Points)</b></h5>
+                        <p>Every department teams are requested to maintain records like participant per event,
+                            registration details, absentees list, result sheets, judges lists etc which will be checked
+                            by the
+                            SWO office at the Intra level evaluation time.100 Percent participation is expected from
+                            each
+                            department team.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div id="register" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h2>Registrations</h2>
+                        <p>Register for blossoms by approaching your department's Blossoms event coordinator.</p>
+                        <p></p>
+                        <!-- <a href="#" class="sim-btn btn-hover-new" data-text="Department Coordinators"><span>Department Coordinators </span></a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="images/media/register.gif" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+    <div id="details" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Event Details </h3>
+            </div><!-- end title -->
+
+            <div class="gallery-menu row">
+                <div class="col-md-12">
+                    <div class="button-group filter-button-group text-left">
+                        <button class="active" data-filter="*">All</button>
+                        <button data-filter=".art_events">ART</button>
+                        <button data-filter=".lit_events">LITERARY</button>
+                        <button data-filter=".stage_events">STAGE</button>
+                        <button data-filter=".theatre_events">THEATRE</button>
+                        <button data-filter=".inter_events">INTER-DEANERY</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-list row">
+                <div class="col-md-4 col-sm-6 gallery-grid stage_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/dance2.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Indian Dance Classical Solo</h4>
+                            <ul>
+                                <li> > Time: 4+1 mins on stage</li>
+                                <li> > Only Authentic Classical music/song to be used.</li>
+                                <li> > No film songs will be allowed</li>
+                                <li> > Top 2 winners will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 14, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Open Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid art_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/card.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Greeting Card Making</h4>
+                            <ul>
+                                <li> > Individual Event</li>
+                                <li> > Chart paper will be given</li>
+                                <li> > Themes will be given on the spot.</li>
+                                <li> > Stationery to be brought by the participants.</li>
+                                <li> > Time: 2:00 hr</li>
+                                <li> > Top 2 winners will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 3, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-3 Room-323 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid art_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/painting.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Painting</h4>
+                            <ul>
+                                <li> > Solo Event</li>
+                                <li> > Theme will be given on the spot.</li>
+                                <li> > Any kind of paints are allowed to be used.</li>
+                                <li> > Chart paper will be provided.</li>
+                                <li> > It has to be original work.</li>
+                                <li> > Time: 1:30 hr</li>
+                                <li> > Top 2 winners will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 3, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-3 Room-314</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-4 col-sm-6 gallery-grid art_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/pot.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Pot Art</h4>
+                            <ul>
+                                <li> > Solo Event</li>
+                                <li> > Theme will be given on the spot.</li>
+                                <li> > Any type of paints, decoration material (beads, sequences etc) are allowed.</li>
+                                <li> > Earthen pots need to be bought by the participants.</li>
+                                <li> > Pot size: Maximum height of 1 foot.</li>
+                                <li> > Time: 1:30 hr</li>
+                                <li> > Top 2 winners will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 4, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-3 Room-314</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid stage_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/mime.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>MIME</h4>
+                            <ul>
+                                <li> > Maximum 8 members per team</li>
+                                <li> > Vulgarity and obscenity in movement strictly prohibited.</li>
+                                <li> > Use of props is not allowed.</li>
+                                <li> > Music to be prerecored</li>
+                                <li> > Time: 7+ 1 mins.</li>
+                                <li> > Top 2 teams will be selected for finals on 5 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 7, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-3 Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid art_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/writing.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Cartooning</h4>
+                            <ul>
+                                <li> > Individual Event</li>
+                                <li> > Only chart paper will be given</li>
+                                <li> > Themes will be given on the spot.</li>
+                                <li> > Only black pencil to be used</li>
+                                <li> > Time: 2:00 hr</li>
+                                <li> > Top 2 winners will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 4, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-3 Room-314</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid art_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/poster.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Poster Painting</h4>
+                            <ul>
+                                <li> > 7 to 10 members in a group</li>
+                                <li> > Poster size: 2x2 chart papers</li>
+                                <li> > Posters will be provided</li>
+                                <li> > Topic given on the spot</li>
+                                <li> > Vulgarity strictly prohibited</li>
+                                <li> > Brushes and other materials have to be bought by the participants</li>
+                                <li> > Time: 2:00 hr</li>
+                                <li> > The first winning team of this will qualify for Wall Painting at the final 7 to 8
+                                    Feb, 2020 </li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 5, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Open Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid lit_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/quiz.JPG" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Quiz</h4>
+                            <ul>
+                                <li> > 3 members per team</li>
+                                <li> > Rounds to be decided by deanery.</li>
+                                <li> > Written prelim</li>
+                                <li> > Time: 1:00 hr</li>
+                                <li> > Top 2 teams will be selected for finals on 5 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 5, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-2 room-201</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid lit_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/11.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Pot Pourri</h4>
+                            <ul>
+                                <li> > 3 members per team</li>
+                                <li> > Consists of a mix of lit events like brain teasers, 20Q, Pictionary & what’s the
+                                    good
+                                    word.</li>
+                                <li> > Written prelim</li>
+                                <li> > Time: 1:00 hr</li>
+                                <li> > Top 2 teams will be selected for finals on 5 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 9, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-2 Room-213</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid lit_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/extempore.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Extempore</h4>
+                            <ul>
+                                <li> > Individual Event</li>
+                                <li> > 2 + 1 mins per participant</li>
+                                <li> > Topics given 5 minutes before event and participants prepare and present before
+                                    the
+                                    audience.</li>
+                                <li> > The individual will have to speak on an impromptu topic for a set of time.</li>
+                                <li> > Time: 1:00 hr</li>
+                                <li> > Top 2 winners will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 10, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-2 Room-201</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid art_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/06.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Debate</h4>
+                            <ul>
+                                <li> > Two in a team</li>
+                                <li> > 4mins +1min rebuttal time.</li>
+                                <li> > Points will be awarded for content, fluency, style and rebuttal</li>
+                                <li> > Topic will be announced a day earlier</li>
+                                <li> > Top 2 teams will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 9, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-2 Room-203</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid lit_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/dumb.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Dumb Charades</h4>
+                            <ul>
+                                <li> > 3 members per team</li>
+                                <li> > No spelling, rhyming, splitting, etc.</li>
+                                <li> > In the event, the participant will be given a word to enact</li>
+                                <li> > Preliminary rounds to be decided by the judges (E.g. People, Movies, Etc.)</li>
+                                <li> > Top 2 teams will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 11, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-2 Room-213</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid lit_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/JAM.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>JAM</h4>
+                            <ul>
+                                <li> > JAM master decides rounds.</li>
+                                <li> > 8-9 participants are panelists who bang on the table if an error is committed,
+                                    list
+                                    out the
+                                    error and speak if the JAM master agrees with the person.</li>
+                                <li> > +5 for correct correction, -5 for wrong correction, +10 for every 5 seconds the
+                                    participant
+                                    speaks.</li>
+                                <li>Additional points for getting the buzzer at the end of the minute. No participant is
+                                    eliminated during the course of JAM.</li>
+                                <li>Judged on clarity, content, presentation, relevance to the topic & language.</li>
+                                <li>Participants lose points on late start, early start, speech defect, grammatical
+                                    error.
+                                </li>
+                                <li> > Time: 2:00 hr</li>
+                                <li> > Top 2 participants will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 11, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-2 Room-205</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid theatre_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/street.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Street Theatre</h4>
+                            <ul>
+                                <li> > Team strength – 10 to 20, Duration – 8 + 2 minutes</li>
+                                <li> > Graduate attributes theme needs to be incorporated</li>
+                                <li> > Use of loud speakers not allowed</li>
+                                <li> > Street Play should be in English only.</li>
+                                <li> > Criteria for marks - Understanding of theme and transformatory effect on audience
+                                    through performance/Presentation, costumes, music, chorus work, performance in the
+                                    round and audience strength</li>
+                                <li> > First 2 teams to be selected for finals on 5 to 6 Feb 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 7, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Open Auditorim</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid theatre_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/theatre.jpeg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Proscenium</h4>
+                            <ul>
+                                <li> > Team strength – 30 to 40 members, Duration – 20 + 10 minutes</li>
+                                <li> > Any published play or original script is acceptable with the incorporation of
+                                    Graduate
+                                    Attributes as theme to create a transformatory effect on audience.</li>
+                                <li> > Criteria for marks - Understanding of theme and transformatory effect on audience
+                                    through performance/Presentation/Direction, stage management, acting, use of light
+                                    and
+                                    sound, costumes, make-up, publicity, backstage management, posters and audience
+                                    strength</li>
+                                <li> > First 2 teams to be selected for finals on 5 to 6 Feb 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 1, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Block-1 Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid stage_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/indian.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Indian Dance Group</h4>
+                            <ul>
+                                <li> > Non-Theme (Film / Folk)</li>
+                                <li> > No fusion of songs (single song to be used)</li>
+                                <li> > The songs must have lyrics.</li>
+                                <li> > Min 6 and max 15 members in a team</li>
+                                <li> > Minimum props will be allowed.</li>
+                                <li> > No fire on stage, No vulgarity in costume, movements or lyrics.</li>
+                                <li> > Time: 5 + 1 mins. On stage</li>
+                                <li> > Top 2 teams will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 14, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Open Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid stage_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/music2.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Indian Electric Music</h4>
+                            <ul>
+                                <li> > Maximum 10 members per team, Minimum of 5 members per team</li>
+                                <li> > No backing tracks, samples and sequences allowed</li>
+                                <li> > Beat/Drum/Percussion accompaniment through a keyboard is Not allowed.</li>
+                                <li> > Growling is Not allowed.</li>
+                                <li> > Band MUST contain at least 2 Indian Instrumentalist and at least 1 vocalist.</li>
+                                <li> > Individual prizes for best own composition, best solo, best duet, best vocal
+                                    group,
+                                    and
+                                    best instrumentalist (finals only - Inter Deanery Competition)</li>
+                                <li> > Drum kit will be provided.</li>
+                                <li> > Time: 12 + 3 mins.</li>
+                                <li> > Top 2 teams will be selected for finals on 7 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 17, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Open Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid stage_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/music.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Western Band</h4>
+                            <ul>
+                                <li> > Maximum 8 members per team, Minimum 4 members.</li>
+                                <li> > Growling NOT allowed</li>
+                                <li> > No backing tracks samples and sequences are allowed</li>
+                                <li> > Beat/Drum/Percussion accompaniment through a keyboard is Not allowed</li>
+                                <li> > Drum kit will be provided.</li>
+                                <li> > Individual prizes for best vocalist, lead guitarist, best drummer, best bassist,
+                                    best
+                                    keyboardist and original song. (Finals only - Inter Deanery Competition).</li>
+                                <li> > Time: 12 + 3 mins. On stage.</li>
+                                <li> > Top 2 teams will be selected for finals on 5 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 16, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Open Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 gallery-grid stage_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/accapella.jpg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Western Acapella</h4>
+                            <ul>
+                                <li> > Maximum 9 members per team (including a beat boxer)</li>
+                                <li> > Minimum of 5 (including a beat boxer)</li>
+                                <li> > Minimum of 5 (including a beat boxer)</li>
+                                <li> > Time: 10 + 2 mins. On stage</li>
+                                <li> > Top 2 teams will be selected for finals on 5 to 8 Feb, 2020</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Dec 16, 2019</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>Open Auditorium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 gallery-grid inter_events">
+                    <div class="gallery-single fix">
+                        <img src="images/events/extravaganza.jpeg" class="img-fluid" alt="Image">
+                        <div style="margin: 5% ;">
+                            <h4>Inter-Deanery Dance Extravanganza</h4>
+                            <ul>
+                                <li> > Teams from a deanery: 4(min) - 8(max)</li>
+                                <li> > Minimum number of dancers in a team: 25 or more</li>
+                                <li> > Time limit per team: 7(min) - 8(max) minutes</li>
+                                <li> > Maximum number of songs per team: 3</li>
+                                <li> > Songs should be from Indian Movies/folk songs.</li>
+                                <li> > If there exists repetition of songs between any two teams, the team which comes
+                                    first with the
+                                    song would be given preference and the other team will be asked to change their
+                                    song.</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-calendar-alt fa-fw"></i>Feb 7-8, 2020</li>
+                                <li><i class="fas fa-map-marker fa-fw"> </i>during In-Blooms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Contact</h3>
+
+            </div><!-- end title -->
+
+            <div class="alert alert-dark" style="padding: 30px" role="alert">
+                <h1 class="display-5">For any registerations or queries contact</h1>
+                <i class="fas fa-address-card"></i><span class="info"> SWO Office</span>
+                <br>
+                <i class="fas fa-map-marker"></i><span class="info"> Room No. 326 First Floor Third Block</span>
+                <hr>
+                <br>
+                <br>
+                <h1 class="display-6">Write to us</h1>
+                <i class="fas fa-user-tie"></i><span class="info"> Ivin George</span>
+                <br>
+                <i class="fas fa-envelope"></i><span class="info"> swo.kengeri@christuniversity.in</span>
+                <br>
+                <br>
+
+            </div>
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#contact">Contact</a>
+                    </p>
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2019 <a
+                            href="https://christuniversity.in//">Christ University</a> Design By :
+                        <a href="https://github.com/basilgeo99"> @basilgeo99</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- Camera Slider -->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/headline.js"></script>
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
+
+</body>
+
+</html>
