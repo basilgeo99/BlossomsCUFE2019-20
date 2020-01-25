@@ -14,12 +14,9 @@ Link to Wesbite : https://christuniversity.in/BlossomsCUFE/
 
 # Previews
 
-![preview gif](preview.gif)
+![preview gif](preview1.gif)
+
+![preview gif](preview2.gif)
+
 ![preview vid](preview.mp4)
 
-<p align="center">
-   <video width="320" height="240" controls>
-      <source src="preview.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video> 
-</p>
