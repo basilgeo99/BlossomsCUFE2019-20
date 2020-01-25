@@ -14,4 +14,5 @@ Link to Wesbite : https://christuniversity.in/BlossomsCUFE/
 
 # Previews
 
-![preview not available](preview.gif)
+![preview gif](preview.gif)
+![preview vid](preview.mp4)
